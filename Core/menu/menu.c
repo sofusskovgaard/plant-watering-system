@@ -32,7 +32,6 @@ static void _render_soil_moisture ( int y )
 	lcd_puts ( "Moisture:" );
 
 	_render_value ( soil_moisture, y );
-	//lcd_gotoxy ( 15, y );
 
 	lcd_puts ( str );
 }
@@ -47,7 +46,6 @@ static void _render_water_level ( int y )
 	lcd_puts ( "Water:" );
 
 	_render_value ( water_level, y );
-	//lcd_gotoxy ( 15, y );
 
 	lcd_puts ( str );
 }

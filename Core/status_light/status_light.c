@@ -44,6 +44,5 @@ static void _init_timer ( void )
 
 void init_status_light ( void )
 {
-	//_init_iopc();
 	_init_timer();
 }

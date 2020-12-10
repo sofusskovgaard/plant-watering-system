@@ -40,13 +40,10 @@ static void _init_ports ( void )
 int main ( void )
 {
 	_init_ports();
+  
 	_init_iopc();
 
-	lcd_init ( LCD_DISP_ON );
-
 	init_status_light();
-
-	set_status ( 4 );
 
 	init_sensors();
 
