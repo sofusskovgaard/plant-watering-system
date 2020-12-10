@@ -5,7 +5,7 @@
 
 This approach would be able to service a single plant.
 
-A single SoC should have an LCD that displays metrics about the plant (soil moisture, tank water level, ambient temperature, light level). The plant pot should have a soil moisture sensor to help determine when to water the plant. A photoresistor to determine how long the plant has received light. A RGB LED to help show how much water is left in the tank.
+A single SoC should have an LCD that displays metrics about the plant (soil moisture, tank water level). The plant pot should have a soil moisture sensor to help determine when to water the plant. A RGB LED to help show how much water is left in the tank.
 
 ### Built with
 
