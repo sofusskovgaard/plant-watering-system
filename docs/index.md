@@ -4,6 +4,18 @@
 
 ![circuit](images/circuit.jpg)
 
+## Table of contents
+- [Plant Watering System](#plant-watering-system)
+  - [Table of contents](#table-of-contents)
+  - [About the project](#about-the-project)
+    - [Built with](#built-with)
+  - [Diagrams](#diagrams)
+  - [Dependencies](#dependencies)
+  - [License](#license)
+  - [Contact](#contact)
+  - [Acknowledgements](#acknowledgements)
+  - [Resources](#resources)
+
 ## About the project
 
 This approach would be able to service a single plant.
