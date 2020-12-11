@@ -2,6 +2,8 @@
 
 > This is a school project.
 
+![circuit](images/circuit.jpg)
+
 ## About the project
 
 This approach would be able to service a single plant.
