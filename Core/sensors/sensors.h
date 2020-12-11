@@ -15,13 +15,29 @@
 #include "../menu/menu.h"
 #include "../pump/pump.h"
 
-#define WATER_LOW		water_level <= 128
-#define WATER_MIDDLE	water_level <= 200 && water_level > 128
-#define WATER_HIGH		water_level > 200
+#ifndef WATER_LOW_VALUE
+#define WATER_LOW_VALUE 25
+#endif
 
-#define MOISTURE_LOW	soil_moisture <= 200
-#define MOISTURE_MIDDLE soil_moisture <= 300 && soil_moisture > 200
-#define MOISTURE_HIGH	soil_moisture > 300
+#ifndef WATER_HIGH_VALUE
+#define WATER_HIGH_VALUE 100
+#endif
+
+#define WATER_LOW		water_level <= WATER_LOW_VALUE
+#define WATER_MIDDLE	water_level <= WATER_HIGH_VALUE && water_level > WATER_LOW_VALUE
+#define WATER_HIGH		water_level > WATER_HIGH_VALUE
+
+#ifndef MOISTURE_LOW_VALUE
+#define MOISTURE_LOW_VALUE 25
+#endif
+
+#ifndef MOISTURE_HIGH_VALUE
+#define MOISTURE_HIGH_VALUE 100
+#endif
+
+#define MOISTURE_LOW	soil_moisture <= MOISTURE_LOW_VALUE
+#define MOISTURE_MIDDLE soil_moisture <= MOISTURE_HIGH_VALUE && soil_moisture > MOISTURE_LOW_VALUE
+#define MOISTURE_HIGH	soil_moisture > MOISTURE_HIGH_VALUE
 
 extern unsigned int soil_moisture;
 extern unsigned int water_level;
